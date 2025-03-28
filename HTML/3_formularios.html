@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulários em HTML</title>
 </head>
+
 <body>
   <main>
     <section>
       <form name="cadastro" method="post" action="cadastro.php">
-        <label for="name">Nome Completo: </label>
-        <input type="text" placeholder="Seu nome: " required="required" id="name">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="name">Nome Completo: </label>
+          <input type="text" placeholder="Seu nome: " required="required" id="name">
+        </fieldset>
         <input type="submit" value="Cadastrar">
       </form>
     </section>
   </main>
-  
+
 </body>
+
 </html>
