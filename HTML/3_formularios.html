@@ -23,18 +23,33 @@
           </div>
 
           <div id="genero">
-            <label for="">Gênero:</label>
-            <input type="radio" value="masculino" name="genero" id=""><span>Masculino</span>
-            <input type="radio" value="feminino" name="genero" id=""><span>Feminino</span>
-            <input type="radio" value="outro" name="genero" id=""><span>Outro</span>
+            <label >Gênero:</label>
+            <input type="radio" value="masculino" name="genero"><span>Masculino</span>
+            <input type="radio" value="feminino" name="genero"><span>Feminino</span>
+            <input type="radio" value="outro" name="genero"><span>Outro</span>
 
           </div>
           <div id="interesse">
-            <label for="cp-interesse">Área de Interesse:</label>
+            <label>Área de Interesse:</label>
             <input type="checkbox" name="interesse" value="TI"><span>Tecnologia da Informação</span>
             <input type="checkbox" name="interesse" value="Comercial"><span>Comercial</span>
             <input type="checkbox" name="interesse" value="Financeiro"><span>Financeiro</span>
 
+          </div>
+          <div id="cidade">
+            <label for="cp-cidade">Cidade</label>
+            <input type="text" placeholder="Cidade: " required="required">
+          </div>
+
+          <div id="estado">
+            <label>Estado:</label>
+            <select name="uf">
+              <option value="Santa Cararina">SC</option>
+              <option value="São Paulo">SP</option>
+              <option value="Alagoas">AL</option>
+              <option value="Minas Gerais">MG</option>
+              <option value="Rio de Janeiro">RJ</option>
+            </select>
           </div>
 
 
