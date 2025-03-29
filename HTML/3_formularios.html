@@ -5,13 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulários em HTML</title>
+  <style>
+    label{
+      margin: 10px 0;
+      display: inline-block;
+    }
+  </style>
 </head>
 
 <body>
   <main>
     <section>
       <form name="cadastro" method="post" action="cadastro.php">
-        <fieldset>
+        <fieldset id="dados-pessoais">
           <legend>Dados Pessoais</legend>
           <div id="nome">
             <label for="name">Nome: </label>
@@ -63,6 +69,32 @@
             <textarea rows="5"></textarea>
           </div>
 
+
+        </fieldset>
+        <fieldset id="dados-pessoa-juridica">
+          <legend>Dados de Pessoa Jurídica</legend>
+
+          <div id="razao-social">
+            <label for="razaosocial">Razão Social</label>
+            <input type="text" id="razaosocial" required="required" placeholder="Razão Social">
+          </div>
+
+          <div id="nome-fantasia">
+            <label for="nomefantasia">Nome Fantasia</label>
+            <input type="text" id="nomefantasia" required="required" placeholder="Nome fantasia">
+          </div>
+
+          <div id="cnpj">
+            <label for="cp-cnpj">CNPJ</label>
+            <input type="text" id="cp-cnpj" required="required" placeholder="CNPJ">
+          </div>
+
+          <div id="insc-est">
+            <label for="inscricao-estadual">Inscrição Estadual</label>
+            <input type="text" id="inscricao-estadual" required="required" placeholder="Inscrição Estadual">
+
+            <input type="checkbox" value="isento-ie" name="" id=""><span>Isento de Inscrição Estadual</span>
+          </div>
 
         </fieldset>
         <input type="submit" value="Cadastrar">
