@@ -6,11 +6,19 @@
   box-sizing: border-box;
 }
 
+/* classes gerais */
+.container{
+  width: 1280px;
+  margin: auto;
+}
+.flex{
+  display: flex;
+}
+.justify-content{
+  justify-content: space-between;
+}
 /* header */
 header{
   background-color: #666;
-  width: 1280px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+
 }
