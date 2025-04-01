@@ -5,8 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* formatação geral das tags*/
 
-/* classes gerais */
+a{
+  color: #000;
+  text-decoration: none;
+}
+/* formatação das classes gerais */
 .container{
   width: 1280px;
   margin: auto;
@@ -14,13 +19,36 @@
 .flex{
   display: flex;
 }
-.justify-content{
+.justify-content-space-between{
   justify-content: space-between;
+}
+.justify-content-space-around{
+  justify-content: space-around;
 }
 /* header */
 header{
   background-color: #666;
   padding: 10px;
-  margin-bottom: 20px;
+}
+/* menu de navegacao */
 
+nav{
+  background: #EEE;
+  
+}
+
+nav ul{
+  list-style: none;
+}
+nav ul li a{
+  color: #FFF;
+  background-color: #333;
+  padding: 20px;
+  display: inline-block;
+  transition: all ease-in-out 0.3s;
+}
+
+nav ul li a:hover{
+  background: #fff;
+  color: #333;
 }
