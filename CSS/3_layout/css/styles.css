@@ -89,3 +89,13 @@ main section a{
   display: inline-block;
 
 }
+
+footer{
+  background: #666;
+  color: #EEE;
+  padding: 20px 0;
+  text-align: center;
+}
+footer p{
+  letter-spacing: 1px;
+}
