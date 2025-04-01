@@ -53,3 +53,39 @@ nav ul li a:hover{
   background: #fff;
   color: #333;
 }
+/* main */
+main{
+  padding: 10px 0;
+}
+main section{
+  border: 1px solid #DDD;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 30px;
+  background: #DDD;
+}
+main section#tecnologia{
+  background: #FFF;
+}
+main section article{
+  margin: 20px 0;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 20px;
+}
+
+main section h2{
+  font-size: 16px;
+  margin: 15px 0;
+}
+main section p{
+  margin: 20px 0;
+}
+
+main section a{
+  background: #666;
+  color: #FFF;
+  padding: 15px;
+  margin-top: 20px;
+  display: inline-block;
+
+}
