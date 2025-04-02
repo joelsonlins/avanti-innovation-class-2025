@@ -25,8 +25,13 @@ nav ul li a {
   display: none;
 
 }
+@media (min-width:760px){
+  header{
+    background:#F0F;
+  }
+}
 
-@media (min-width: 760px) {
+@media (min-width: 1280px) {
   header {
     background-color: blue;
   }
