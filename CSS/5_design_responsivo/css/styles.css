@@ -18,6 +18,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+.paragrafo-destaque{
+  display: none;
+
+}
+
 @media (min-width: 760px) {
   header {
     background-color: blue;
@@ -29,8 +34,13 @@ nav ul li a {
   nav ul li{
     margin: 15px;
   }
-  header, nav, main{
+  header, nav, main, footer{
     width: 1280px;
     margin: auto;
+  }
+  .paragrafo-destaque{
+    display: block;
+    background-color: green;
+  
   }
 }
