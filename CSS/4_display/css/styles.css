@@ -6,17 +6,38 @@ a {
   padding: 30px;
   display: inline-block;
 }
+a:hover{
+  background-color: #ccc;
+}
 .content-flex{
  display: flex;
- flex-direction: column; 
  width: 1280px;
  justify-content: flex-start;
  /* height: 500px; */
  align-items: center;
- /* flex-wrap: wrap; */
+ flex-wrap: wrap;
 }
 
 .content-flex p{
   padding: 30px;
   width: 250px;
+}
+.content-flex p:first-child{
+  font-weight: bold;
+}
+.content-flex p::before{
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-color: #F00;
+  display: inline-block;
+  margin-right: 20px;
+}
+.content-flex p::after{
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  display: inline-block;
+  margin-left: 20px;
 }
