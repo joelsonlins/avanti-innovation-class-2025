@@ -29,4 +29,8 @@ nav ul li a {
   nav ul li{
     margin: 15px;
   }
+  header, nav, main{
+    width: 1280px;
+    margin: auto;
+  }
 }
