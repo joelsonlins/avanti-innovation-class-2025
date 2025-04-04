@@ -7,6 +7,9 @@ const idade = 40;
 const valor1 = 2.10;
 const valor2 = 3.20;
 
+const frutas = ["banana", "maça", "mamão", 20]
+console.log("frutas", frutas[0])
+
 //const isLogin = true;
 
 
