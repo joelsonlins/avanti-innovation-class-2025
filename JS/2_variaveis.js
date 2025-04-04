@@ -15,7 +15,11 @@ const usuario = {
   idade: 47,
 }
 
-console.log(usuario.idade)
+//console.log(usuario.idade);
+
+
+const vazio = null;
+console.log(typeof usuario)
 
 //console.log("frutas", frutas[0])
 
