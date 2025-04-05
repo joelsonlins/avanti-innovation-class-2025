@@ -17,3 +17,14 @@ console.log("classtext", classText)
 for(text of classText){
   text.style.color="blue"
 }
+
+// seleção por tag
+
+const titles = document.getElementsByTagName("h2")
+
+console.log("titles", titles)
+
+for(title of titles){
+  title.style.color="orange"
+  title.style.fontSize = "40px";
+}
