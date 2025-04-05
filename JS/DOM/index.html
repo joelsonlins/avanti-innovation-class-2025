@@ -7,5 +7,14 @@
 </head>
 <body>
   <button onclick="alert('Clocou no botão!')">Clique Aqui</button>
+
+  <button id="abreAlert">Abre janela</button>
+
+  <script>
+    const btAbreAlert = document.querySelector("#abreAlert")
+    btAbreAlert.addEventListener("click",()=>{
+      alert("Abrindo janela pelo Script incorporado")
+    })
+  </script>
 </body>
 </html>
