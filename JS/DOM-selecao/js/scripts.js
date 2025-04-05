@@ -61,3 +61,19 @@ for (link of links) {
 
 // remove
 content.remove()
+
+// navegação pelo DOM
+
+const lista = document.querySelector("#links ul")
+
+lista.parentNode.style.backgroundColor="#F00" // parentNode pega 1 elemento acima do elemento selecionado
+
+lista.children
+
+console.log("Qual elemento?", lista.parentNode)
+console.log("filho", lista.children)
+for(list of lista.children){
+  list.style.color="#00F"
+}
+
+lista.firstElementChild.style.fontSize="26px"
