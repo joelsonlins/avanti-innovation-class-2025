@@ -45,3 +45,16 @@ elementFeature.insertAdjacentHTML(
 );
 
 document.body.insertBefore(newElement, elementFeature); //insere antes do contexto do elemento
+
+// query selectoAll
+
+const links = document.querySelectorAll("#links a");
+
+console.log("links", links);
+
+for (link of links) {
+  link.classList.add("feature-links");
+  console.log(link.getAttribute("href")); // tipo de getter
+  link.target = "_blank"
+  link.title = link.getAttribute("href").slice(0,-5)
+}

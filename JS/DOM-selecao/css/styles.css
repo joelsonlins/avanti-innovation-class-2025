@@ -1,0 +1,12 @@
+.feature-links{
+  text-decoration: none;
+  margin: 10px;  
+  color: black;
+  font-size: 24px;
+}
+
+#links ul{
+  list-style: none;
+  display: flex;
+
+}
