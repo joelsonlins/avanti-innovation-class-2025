@@ -58,3 +58,6 @@ for (link of links) {
   link.target = "_blank"
   link.title = link.getAttribute("href").slice(0,-5)
 }
+
+// remove
+content.remove()
