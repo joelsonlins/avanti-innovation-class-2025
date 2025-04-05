@@ -1,30 +1,47 @@
 // seleção por ID
 
-const content = document.getElementById("content")
+const content = document.getElementById("content");
 
-console.log("content", content)
+console.log("content", content);
 
-content.innerHTML = `<p>Parágrafo de texto</p>`
-content.style.backgroundColor ="#F00"
-content.style.fontSize="30px"
+content.innerHTML = `<p>Parágrafo de texto</p>`;
+content.style.backgroundColor = "#F00";
+content.style.fontSize = "30px";
 
 // seleção por classe
 
-const classText = document.getElementsByClassName("text")
+const classText = document.getElementsByClassName("text");
 
-console.log("classtext", classText)
+console.log("classtext", classText);
 
-for(text of classText){
-  text.style.color="blue"
+for (text of classText) {
+  text.style.color = "blue";
 }
 
 // seleção por tag
 
-const titles = document.getElementsByTagName("h2")
+const titles = document.getElementsByTagName("h2");
 
-console.log("titles", titles)
+console.log("titles", titles);
 
-for(title of titles){
-  title.style.color="orange"
+for (title of titles) {
+  title.style.color = "orange";
   title.style.fontSize = "40px";
 }
+
+// query selector
+
+const elementFeature = document.querySelector("#feature");
+
+const newElement = document.createElement("p");
+
+newElement.textContent = "Um novo parágrafo";
+
+elementFeature.append(newElement);
+
+elementFeature.insertAdjacentHTML(
+  "beforeend",
+  `<div><p>Outro paragrafo criado dinamicamente</p></div>`
+);
+
+document.body.insertBefore(newElement, elementFeature); //insere antes do contexto do elemento
