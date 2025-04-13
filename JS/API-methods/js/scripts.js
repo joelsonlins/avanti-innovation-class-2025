@@ -1,12 +1,30 @@
-fetch("https://jsonplaceholder.typicode.com/posts")
+// -- Requisição tipo GET
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((response) => response.json())
+//   .then((posts) => {
+//     //console.log(post);
+//     const container = document.querySelector("#container")
+//     posts.map(post => {
+//       //console.log(post.title)
+//       const h2 = document.createElement("h2")
+//       h2.textContent = post.title
+//       container.appendChild(h2)
+//     })
+//   });
+
+// -- Requisição tipo POST
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
   .then((response) => response.json())
-  .then((posts) => {
-    //console.log(post);
-    const container = document.querySelector("#container")
-    posts.map(post => {
-      //console.log(post.title)
-      const h2 = document.createElement("h2")
-      h2.textContent = post.title
-      container.appendChild(h2)
-    })
-  });
+  .then((json) => console.log(json));
