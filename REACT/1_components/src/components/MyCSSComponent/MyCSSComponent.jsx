@@ -1,4 +1,6 @@
 import React from 'react'
+import './MyCSSComponent.css'
+
 
 const MyCSSComponent = () => {
 
@@ -9,6 +11,7 @@ const MyCSSComponent = () => {
   }
   return (
 <>
+<h1>Meu Título</h1>
 <p style={cssInline}>Meu parágrafo</p>
 </>
   )
