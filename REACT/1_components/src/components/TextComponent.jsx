@@ -1,8 +1,11 @@
 import React from "react";
 
-const TextComponent = () =>{
+const TextComponent = ({text, descricao}) =>{
   return(
-    <h1>Texto do meu componente</h1>
+    <>
+    <h1>{text}</h1>
+    <p>{descricao}</p>
+    </>
   )
 }
 export default TextComponent

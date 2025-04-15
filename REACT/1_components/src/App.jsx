@@ -1,40 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 import TextComponent from './components/TextComponent'
 import { SecondText, ThirdText } from './components/OtherComponents'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <TextComponent/>
-        <TextComponent/>
-        <TextComponent/>
+        <TextComponent text="Meu primeiro texto." descricao="descrição do primeiro texto"/>
+        <TextComponent text="Meu segundo texto." descricao="descrição do segundo texto"/>
+        <TextComponent text="Meu terceiro texto." descricao="descrição do terceiro texto"/>
         <SecondText/>
         <ThirdText/>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
