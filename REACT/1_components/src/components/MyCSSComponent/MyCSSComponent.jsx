@@ -1,5 +1,5 @@
 import React from 'react'
-import './MyCSSComponent.css'
+import styles from "./MyCSSComponent.module.css"
 
 
 const MyCSSComponent = () => {
@@ -11,7 +11,7 @@ const MyCSSComponent = () => {
   }
   return (
 <>
-<h1>Meu Título</h1>
+<h1 className={styles.title}>Meu Título</h1>
 <p style={cssInline}>Meu parágrafo</p>
 </>
   )
