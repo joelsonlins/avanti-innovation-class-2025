@@ -6,6 +6,7 @@ import Events from './components/Events'
 import MyCSSComponent from './components/MyCSSComponent/MyCSSComponent'
 import Counter from './components/MyCSSComponent/Counter'
 import ProductQuantity from './components/MyCSSComponent/ProductQuantity'
+import GithubUser from './components/MyCSSComponent/GithubUser'
 
 function App() {
 
@@ -18,10 +19,15 @@ function App() {
     <p><Counter/></p>
     <hr />
 
-    {/* contrle de quantidade de produto */}
+    {/* controle de quantidade de produto */}
     <h2>Controle de quantidade do produto</h2>
     <p><ProductQuantity/></p>
     <hr />
+    
+    {/* Github user*/}
+    <h2>Usuário do Github</h2>
+    <GithubUser/>
+
 
     <h2>Meu componente CSS</h2>
     <MyCSSComponent></MyCSSComponent>
