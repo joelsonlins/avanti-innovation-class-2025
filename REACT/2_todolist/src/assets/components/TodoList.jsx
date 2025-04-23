@@ -3,6 +3,13 @@ import styles from "./TodoList.module.css"
 
 function TodoList() {
 const [task, setTask] = useState("")
+const [tasks, setTasks] = useState([])
+
+const addTask = ()=>{
+  if(task.trim() === "") return;
+  setTasks([...tasks,task])
+  setTask("")
+}
 
   return (
     <div className={styles.container}>
@@ -15,7 +22,7 @@ const [task, setTask] = useState("")
           value={task}
           onChange={(e)=>setTask(e.target.value)}
         />
-        <button className={styles.button}>Adiconar</button>
+        <button onClick={addTask} className={styles.button}>Adiconar</button>
 
       </div>
       <ul className={styles.taskList}>
