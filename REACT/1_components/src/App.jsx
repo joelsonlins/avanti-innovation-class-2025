@@ -12,11 +12,17 @@ function App() {
 
   return (
     <>
+
+    {/* Contador */}
     <h1>Contador</h1>
     <p><Counter/></p>
+    <hr />
 
+    {/* contrle de quantidade de produto */}
     <h2>Controle de quantidade do produto</h2>
     <p><ProductQuantity/></p>
+    <hr />
+
     <h2>Meu componente CSS</h2>
     <MyCSSComponent></MyCSSComponent>
 

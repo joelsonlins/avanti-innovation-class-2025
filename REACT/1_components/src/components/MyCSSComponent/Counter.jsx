@@ -1,8 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const Counter = () => {
 
   const [counter, setCount] = useState(0);
+
+  useEffect(()=>{
+    document.title = `Contador: ${counter}`
+  },[counter])
 
   const increment = () => {
     setCount((prevState)=>prevState + 1)
