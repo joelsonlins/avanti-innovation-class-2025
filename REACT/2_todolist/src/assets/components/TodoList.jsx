@@ -26,7 +26,9 @@ const addTask = ()=>{
 
       </div>
       <ul className={styles.taskList}>
-        <li className={styles.taskItem}>Tarefa</li>
+        {tasks.map((taskItem, index)=>(
+          <li key={index} className={styles.taskItem}>{taskItem}</li>
+        ))}
 
       </ul>
 
