@@ -56,7 +56,7 @@ const ContactForm = () => {
        onChange={handleChange}
        required="true"
        />
-       <button type='submit' className={styles.button}>enviar</button>
+       <button type='submit' className={styles.button}>Enviar</button>
     </form>
   )
 }
